@@ -18,7 +18,7 @@ import numpy as np
 import pandas as pd
 
 
-all_ham_data_df = pd.read_csv("classificador_medico/ISIC2018_Task3_Training_GroundTruth/ISIC2018_Task3_Training_GroundTruth.csv")
+all_ham_data_df = pd.read_csv("ISIC2018_Task3_Training_GroundTruth/ISIC2018_Task3_Training_GroundTruth.csv")
 
 print(all_ham_data_df.info())
 print(all_ham_data_df.head())
@@ -41,6 +41,6 @@ print(all_ham_data_df.info())
 print(all_ham_data_df.head())
 
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
-output_file_name = "classificador_medico/binary_HAM10000_metadata.csv"
+output_file_name = "binary_HAM10000_metadata.csv"
 all_ham_data_df.to_csv(output_file_name)
 print("Wrote", output_file_name)
